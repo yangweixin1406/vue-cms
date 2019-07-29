@@ -1,0 +1,15 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [  
+        ["component", 
+      {
+        "libraryName": "mint-ui",
+        "style": true
+      }
+    ],
+    "@babel/plugin-proposal-class-properties"
+]
+    
+}
