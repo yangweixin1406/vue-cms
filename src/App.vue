@@ -40,7 +40,8 @@
   margin: 0;
   padding: 0;
   .box-container {
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 52px;
     overflow-x: hidden;
   }
 }
