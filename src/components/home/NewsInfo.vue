@@ -12,7 +12,7 @@
 
         </div>
 
-        <my-comments :id="this.id"></my-comments>
+        <my-comments :id="id"></my-comments>
     </div>
 </template>
 

@@ -13,7 +13,8 @@ module.exports = {
     devServer: {
         open: true,    //自动打开浏览器
         contentBase: path.join(__dirname, 'src'),   //打开文件所在位置
-        hot: true      //启用热更新
+        hot: true,      //启用热更新
+        host: '192.168.1.105'
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),  //new一个webpack热更新模块
