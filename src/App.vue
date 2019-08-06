@@ -4,7 +4,7 @@
     <mt-header fixed title="个人项目"></mt-header>
 
     <!-- body 用来切换不同的路由页面  <router-view></router-view> -->
-    <transition>
+    <transition name="test">
       <router-view></router-view>
     </transition>
 
@@ -20,7 +20,7 @@
       </router-link>
       <router-link class="mui-tab-item-my" to="/shopcar">
         <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-          <span class="mui-badge">0</span>
+          <span class="mui-badge" id="badge">0</span>
         </span>
         <span class="mui-tab-label">购物车</span>
       </router-link>
@@ -48,18 +48,18 @@
 .mint-header {
   z-index: 99;
 }
-.v-enter {
+.test-enter {
   opacity: 0;
   transform: translateX(100%);
 }
-.v-leave-to {
+.test-leave-to {
   opacity: 0;
   transform: translateX(-100%);
   position: absolute;
 }
-.v-enter-active,
-.v-leave-active {
-  transition: all 0.5 ease;
+.test-enter-active,
+.test-leave-active {
+  transition: all 0.5s ease;
 }
 
 .mui-bar-tab .mui-tab-item-my.mui-active {
