@@ -4,7 +4,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const vueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
-    mode: 'development',     //模式 生产模式 development 和 上线 producion
+    mode: 'production',     //模式 生产模式 development 和 上线 producion
     entry: path.join(__dirname, './src/main.js'),  //入口
     output: {   //出口
         path: path.resolve(__dirname, './dist'),
@@ -13,8 +13,7 @@ module.exports = {
     devServer: {
         open: true,    //自动打开浏览器
         contentBase: path.join(__dirname, 'src'),   //打开文件所在位置
-        hot: true,      //启用热更新
-        host: '192.168.1.102'
+        hot: true     //启用热更新
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),  //new一个webpack热更新模块

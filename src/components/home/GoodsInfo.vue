@@ -92,6 +92,15 @@ export default {
     },
     addGoodsToCar() {
       this.showball = !this.showball;
+
+      const goodsinfo = {
+        id: this.id,
+        price: this.goodsInfo.sell_price,
+        count: this.selectCount,
+        selected: true
+      }
+
+      this.$store.commit('addToCar', goodsinfo);
     },
     beforeEnter(el) {
       el.style.transform = "translate(0, 0)";
